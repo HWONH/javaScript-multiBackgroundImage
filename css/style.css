@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#header{
+    height: 300px;
+    background: #aaffff;
+}
+#section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/section_deco_left.png), url(../images/section_deco_right.png);
+    /* 멀티 배경 이미지를 적용시 첫번째 선언된 이미지의 파일이 가장 전면으로 배치가 됨 */
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px auto, 200px auto;
+    background-position: left -5%, left 0%;
+    background-attachment: fixed, fixed;
+    padding: 30px 0;
+}
+#section .wrap{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    background: #aaffaa;
+}
+#section .wrap h2{
+    font-size: 30px;
+    line-height: 1;
+    border-left: 4px solid red;
+    padding-left: 8px;
+    color: red;
+    transform: rotate(90deg);
+    display: inline-block;
+    transform-origin: left bottom;
+    margin-top: -30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#footer{
+    height: 300px;
+    background: #333333;
+}
